@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background: tomato;
+            padding: 50px;
+            border-radius: 12px;
+            font-size: 50px;
+        }
+ 
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 6px;
+        }
+
+        nav {
+            display: flex;
+            gap: 12px;
+            background: #001;
+            padding: 12px;
+            flex-direction: column;
+            position: absolute;
+            width: 90%;
+            left: 5%;
+            border-radius: 5px;
+            top: 20px;
+            transform: translate(200%);
+            transition: .5s;
+            @media screen and (min-width:769px) {
+                display: flex;
+                position: static;
+                width: auto;
+                flex-direction: row;
+                background: transparent;
+                transform: translate(0);
+            }
+        }
+
+        header button {
+            display: block;
+            @media screen and (min-width:769px) {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Brand</h1>
+        <nav>
+            <a href=""> Link</a>
+            <a href=""> Link</a>
+            <a href=""> Link</a>
+        </nav>
+        <button type="button"> Menu</button>
+    </header>
+    <div class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing.
+    </div>
+</body>
+
+</html>
